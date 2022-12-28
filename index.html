@@ -42,7 +42,7 @@
       def hypotenuse_result():
         b = float(Element("opposite").value)
         c = float(Element("adjacent").value)
-        Element("hypotenuse-result").write(f"comprimento da hipotenusa é {hipotenusa(b, c):.2f}")
+        Element("hypotenuse-result").write(f"comprimento da hipotenusa é {hypotenuse(b, c):.2f}")
       
       def clean():
         Element("opposite").clear()
