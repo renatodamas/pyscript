@@ -13,21 +13,24 @@
   </head>
 
   <body>
-    <strong class="m-2" >Cálculo de hipotenusa de um triângulo retângulo</strong>
+    <div id="hypotenuse" class="m-2">
+      <strong>Cálculo de hipotenusa de um triângulo retângulo</strong>
   
-    <form id="hypotenuse-form" class="m-2">
-      <div >
-        <label for="opposite" class="form-label"> Comprimento do cateto oposto: </label>
-        <input class="form-control" type="number" id="opposite" min="0">
-      </div>
-      <div >
-        <label for="adjacent" class="form-label"> Comprimento do cateto adjacente: </label><br>
-        <input class="form-control" type="number" id="adjacent" min="0"><br>  
-      </div>
-      <button id="btn-run-hypotenuse" py-click="hypotenuse_result()" type="button" class="btn btn-primary">Calcule a Hipotenusa</button>
-      <button id="btn-clean-hypotenuse" py-click="clean()" type="button" class="btn btn-danger">Limpar</button>
-    
-    </form>
+      <form id="hypotenuse-form" class="m-2">
+        <div >
+          <label for="opposite" class="form-label"> Comprimento do cateto oposto: </label>
+          <input class="form-control" type="number" id="opposite" min="0">
+        </div>
+        <div >
+          <label for="adjacent" class="form-label"> Comprimento do cateto adjacente: </label><br>
+          <input class="form-control" type="number" id="adjacent" min="0"><br>  
+        </div>
+        <button id="btn-run-hypotenuse" py-click="hypotenuse_result()" type="button" class="btn btn-primary">Calcule a Hipotenusa</button>
+        <button id="btn-clean-hypotenuse" py-click="clean()" type="button" class="btn btn-danger">Limpar</button>
+      
+      </form>
+      <div class="m-2" id="hypotenuse-result"></div>
+    </div>
     
 
     <div class="m-2" id="hypotenuse-result"></div>
